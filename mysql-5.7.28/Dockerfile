@@ -1,4 +1,4 @@
-FROM mysql:mysql:5.7.28
+FROM mysql:5.7.28
 LABEL Maintainer="Sean Wu <wuxyyin@qq.com>" \
       Description="Mysql 5.7.28 container with ONLY_FULL_GROUP_BY closed."
 
