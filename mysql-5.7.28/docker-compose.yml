@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql-5.7.28:
+    image: registry.cn-hangzhou.aliyuncs.com/wuxyyin/mysql:5.7.28
+    ports:
+      - 3306:3306
+    volumes:
+      - /home/mysql/5.7.28:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "mysql root password"
+      MYSQL_DATABASE: "database name"
+      MYSQL_USER: "database user"
+      MYSQL_PASSWORD: "database user password"
+    restart: always
