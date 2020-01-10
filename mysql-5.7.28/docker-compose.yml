@@ -6,6 +6,8 @@ services:
       - 3306:3306
     volumes:
       - /home/mysql/5.7.28:/var/lib/mysql
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
     environment:
       MYSQL_ROOT_PASSWORD: "mysql root password"
       MYSQL_DATABASE: "database name"
